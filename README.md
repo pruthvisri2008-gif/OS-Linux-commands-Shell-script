@@ -43,11 +43,11 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-![Alt text](../../ex01-33.png)
+imaone.png
 
 cat < file2
 ## OUTPUT
-![Alt text](../../ex02.png)
+![Alt text](ex02.png)
 
 # Comparing Files
 cmp file1 file2
@@ -259,8 +259,7 @@ sed  '/tom/s/5000/6000/' file23
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
-![Alt text](../../ex37.png)
+ex37.png
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
