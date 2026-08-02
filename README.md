@@ -118,35 +118,35 @@ grep Hello newfile
 grep hello newfile 
 ## OUTPUT
 
-![Alt text](../../ex11.png)
+![Alt text](ele.png)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-![Alt text](../../ex12.png)
+![Alt text](twl.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
 
-![Alt text](../../ex13.png)
+![Alt text](thr.png)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
 
-![Alt text](../../ex15.png)
+![Alt text](fiv.png)
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-![Alt text](../../ex14.png)
+![Alt text](fou.png)
 
 grep -w -n world newfile   
 ## OUTPUT
 
-![Alt text](../../ex18.png)
+![Alt text](eig.png)
 cat < newfile 
 ```
 Hello world
@@ -169,17 +169,17 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-![Alt text](../../ex18.png)
+![Alt text](eig.png)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-![Alt text](../../ex19.png)
+![Alt text](nin.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-![Alt text](../../ex20.png)
+![Alt text](twenty.png)
 
 
 egrep '(^hello)' newfile 
@@ -260,7 +260,7 @@ sed  -e '2s/Ram/Sita/' file23
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-![Alt text](../../ex36.png)
+![Alt text](ex36.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
