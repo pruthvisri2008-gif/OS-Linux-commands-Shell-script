@@ -185,44 +185,45 @@ egrep -w '(H|h)ell[a-z]' newfile
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-![Alt text](../../ex21.png)
+![Alt text](tone.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-![Alt text](../../ex23.png)
+![Alt text](tthree.png)
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
-![Alt text](../../ex23.png)
+![Alt text](tthree.png)
+
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-![Alt text](../../ex24.png)
+![Alt text](tfour.png)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-![Alt text](../../ex26.png)
+![Alt text](tsix.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
-![Alt text](../../ex26.png)
+![Alt text](tsix.png)
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
-![Alt text](../../ex28.png)
+![Alt text](teight.png)
 egrep l{2} newfile
 ## OUTPUT
 
-![Alt text](../../ex29.png)
+![Alt text](tnine.png)
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
-![Alt text](../../ex30.png)
+![Alt text](thirty.png)
 cat > file23
 ```
 1001 | Ram | 10000 | HR
@@ -235,36 +236,38 @@ cat > file23
 1001 | Ram | 10000 | HR
 ^d
 ```
-![Alt text](../../ex30.png)
+![Alt text](thirty.png)
 
 sed -n -e '3p' file23
 ## OUTPUT
 
-![Alt text](../../ex31.png)
+
+![Alt text](pone.png)
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-![Alt text](../../ex33.png)
+![Alt text](pthree.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-![Alt text](../../ex34.png)
+![Alt text](pfour.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-![Alt text](../../ex35.png)
+![Alt text](pfive.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-![Alt text](ex36.png)
+![Alt text](psix.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-ex37.png
+
+![Alt text](pseven.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
@@ -275,42 +278,42 @@ sed -n -e '2,/Joe/p' file23
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
+![Alt text](peight.png)
 
 seq 10 
 ## OUTPUT
 
-![Alt text](../../ex39.png)
+![Alt text](pnine.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-![Alt text](../../ex41.png)
+![Alt text](fone.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-![Alt text](../../ex40.png)
+![Alt text](fourty.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-![Alt text](../../ex42.png)
+![Alt text](ftwo.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-![Alt text](../../ex43.png)
+![Alt text](fthree.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
-![Alt text](../../ex44.png)
+![Alt text](ffour.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-![Alt text](../../ex45.png)
+![Alt text](ffive.png)
 
 sed -n '2,4{s/$/*/;p}' file23
 
@@ -324,14 +327,14 @@ cat > file21
 1005 | Sam |  5000 | HR
 1004 | Sit |  7000 | Dev
 ``` 
-![Alt text](../../ex47.png)
+![Alt text](fseven.png)
 sort file21
 ## OUTPUT
 
-![Alt text](../../ex46.png)
+
 
 cat > file22
-![Alt text](../../ex48.png)
+![Alt text](feight.png)
 ```
 1001 | Ram | 10000 | HR
 1001 | Ram | 10000 | HR
@@ -340,21 +343,21 @@ cat > file22
 1005 | Sam |  5000 | HR
 1004 | Sit |  7000 | Dev
 ```
-![Alt text](../../ex49.png) 
+![Alt text](fnine.png)
 
 uniq file22
 ## OUTPUT
 
-![Alt text](../../ex47.png)
+![Alt text](fseven.png)
 
 #Using tr command
 
-![Alt text](../../ex50.png)
+![Alt text](fifty.png)
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
 
-![Alt text](../../ex51.png)
+![Alt text](aone.png)
 
 cat < urllist.txt
 ```
@@ -372,18 +375,18 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-![Alt text](../../ex52.png)
+![Alt text](atwo.png)
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-![Alt text](../../ex53.png)
+![Alt text](athree.png)
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
 
-![Alt text](../../ex54.png)
+![Alt text](afour.png)
 
 mkdir backupdir
  
@@ -394,27 +397,27 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-![Alt text](../../ex55.png)
+![Alt text](afive.png)
 
 tar -xvf backup.tar
 ## OUTPUT
 
-![Alt text](../../ex56.png)
+![Alt text](asix.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
 
-![Alt text](../../ex57.png)
+![Alt text](aseven.png)
 gunzip backup.tar.gz
 ## OUTPUT
 
-![Alt text](../../ex57.png)
+![Alt text](aseven.png)
 
 # Shell Script
 
-![Alt text](../../ex58.png)
+![Alt text](aeight.png)
 ```
 echo '#!/bin/sh' > my-script.sh
 echo 'echo Hello World‘; exit 0 >> my-script.sh
@@ -423,7 +426,7 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 
-![Alt text](../../ex59.png)
+![Alt text](anine.png)
 
 cat << stop > herecheck.txt
 ```
@@ -436,7 +439,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
-![Alt text](../../ex60.png)
+![Alt text](sixty.png)
 cat < scriptest.sh 
 ```bash
 \#!/bin/sh
