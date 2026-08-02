@@ -47,20 +47,25 @@ imaone.png
 
 cat < file2
 ## OUTPUT
-![Alt text](ex02.png)
+
+![Alt text](two.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- ![Alt text](../../ex03.png)
+
+ ![Alt text](three.png)
+
 comm file1 file2
  ## OUTPUT
-![Alt text](../../ex05.png)
+
+![Alt text](five.png)
  
 diff file1 file2
 ## OUTPUT
 
-![Alt text](../../ex05.png)
+![Alt text](five.png))
+
 #Filters
 
 ### Create the following files file11, file22 as follows:
@@ -78,18 +83,18 @@ cat > file22
 1003 | Joe |  7000 | Developer
 ^d
 ```
-![Alt text](../../ex06.png)
+![Alt text](six.png)
 
 cut -c1-3 file11
 ## OUTPUT
 
-![Alt text](../../ex07.png)
+![Alt text](seven.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-![Alt text](../../ex07.png)
+![Alt text](seven.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
@@ -108,7 +113,7 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-![Alt text](../../ex10.png)
+![Alt text](ten.png)
 
 grep hello newfile 
 ## OUTPUT
