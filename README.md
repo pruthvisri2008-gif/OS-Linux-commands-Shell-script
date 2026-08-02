@@ -477,10 +477,10 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- ![Alt text](../../ex61.png)
+ ![Alt text](sone.png)
 ls file1
 ## OUTPUT
-![Alt text](../../ex62.png)
+![Alt text](stwo.png)
 echo $?
 ## OUTPUT 
 ./one
@@ -488,16 +488,16 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
-![Alt text](../../ex63.png)
+![Alt text](sthree.png)
 abcd
  
 echo $?
  ## OUTPUT
 
-![Alt text](../../ex63.png)
+![Alt text](sthree.png)
  
 # mis-using string comparisons
-![Alt text](../../ex64.png)
+![Alt text](sfour.png)
 cat < strcomp.sh 
 ```bash
 \#!/bin/bash
@@ -526,17 +526,17 @@ fi
 ```
 ##OUTPUT
 
-![Alt text](../../ex65.png)
+![Alt text](sfive.png)
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
 
-![Alt text](../../ex65.png)
+![Alt text](sfive.png)
 
 # check file ownership
-![Alt text](../../ex66.png)
+![Alt text](ssix.png)
 cat < psswdperm.sh 
 ```bash
 \#!/bin/bash
@@ -561,10 +561,10 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![Alt text](../../ex66.png)
+
 
 # check if with file location
-![Alt text](../../ex66.png)
+![Alt text](ssix.png)
 cat>ifnested.sh 
 ```bash
 \#!/bin/bash
@@ -606,11 +606,11 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
-
+![Alt text](sseven.png)
 ./ifnested.sh 
 ## OUTPUT
 
-![Alt text](../../ex68.png)
+![Alt text](seight.png)
 
 
 # using numeric test comparisons
@@ -654,7 +654,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-![Alt text](../../ex69.png)
+![Alt text](snine.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -705,7 +705,7 @@ $ chmod 755 ifnested.sh
 $ ./ifnested.sh 
 ##OUTPUT
 
-![Alt text](../../ex70.png)
+![Alt text](seventy.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -734,8 +734,8 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-![Alt text](../../ex71.png)
 
+![Alt text](cone.png)
 # testing compound comparisons
 cat> ifcompound.sh 
 ```bash
@@ -750,9 +750,9 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![Alt text](../../ex72.png)
+![Alt text](ctwo.png)
 # using the case command
-![Alt text](../../ex73.png)
+![Alt text](cthree.png)
 cat >casecheck.sh 
 ```bash
 case $USER in
@@ -782,7 +782,7 @@ echo $var1
 var1=$[ $var1 - 1 ]
 done
 ```
-![Alt text](../../ex75.png)
+![Alt text](cfive.png)
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
@@ -800,7 +800,7 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- ![Alt text](../../ex76.png)
+![Alt text](cseven.png)
  
 cat forin1.sh 
 ```bash
@@ -814,7 +814,7 @@ done
  
 $ chmod 755 forin1.sh
  
- ![Alt text](../../ex77.png)
+![Alt text](cseven.png)
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -836,6 +836,7 @@ do
 echo “word:$test”
 done
 ```
+![Alt text](eightyy.png)
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
@@ -849,7 +850,7 @@ do
 echo "word:$test"
 done
 ```
-![Alt text](../../ex78.png)
+![Alt text](cseven.png)
 $ ./forin3.sh 
  
 cat forin1.sh 
@@ -861,7 +862,7 @@ do
 echo The next state is $test
 done
 ```
-![Alt text](../../ex79.png)
+![Alt text](cnine.png)
 $ chmod 755 forin1.sh
 
 ## OUTPUT
@@ -887,7 +888,7 @@ Khammam
 
 ## OUTPUT
 
-![Alt text](../../ex83.png)
+![Alt text](kthree.png)
 cat forctype.sh 
 ```bash
 #!/bin/bash
@@ -910,7 +911,7 @@ do
 echo "$a - $b"
 done
 ```
-![Alt text](../../ex84.png)
+![Alt text](kfour.png)
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
@@ -933,7 +934,7 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
-![Alt text](../../ex85.png)
+![Alt text](kfive.png)
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -949,7 +950,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
-![Alt text](../../ex85.png)
+![Alt text](ksix.png)
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
@@ -968,7 +969,7 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-![Alt text](../../ex86.png)
+![Alt text](ksix.png)
  
 $ chmod 755 forcontinue.sh
  
@@ -988,8 +989,8 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![Alt text](ksix.png)
 
-![Alt text](../../ex87.png)
  cat exread1.sh
 ```bash
 #!/bin/bash
@@ -1002,7 +1003,7 @@ $ chmod 755 exread1.sh
 ## OUTPUT
 
 
-![Alt text](../../ex87.png)
+![Alt text](kseven.png)
 $ ./exread1.sh 
  
 cat funcex.sh
@@ -1021,10 +1022,10 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
-![Alt text](../../ex88.png)
+![Alt text](keight.png)
  ./funcex.sh 
 
-![Alt text](../../ex89.png) 
+![Alt text](knine.png)
  ./funcex.sh 1 2
  
 cat argshift.sh
@@ -1035,11 +1036,11 @@ cat argshift.sh
   shift 
 done
 ```
-![Alt text](../../ex90.png)
+![Alt text](nintyy.png)
 $ chmod 777 argshift.sh
 
 ## OUTPUT
-![Alt text](../../ex91.png)
+![Alt text](none.png)
 $ ./argshift.sh 1 2 3
  
 
@@ -1058,7 +1059,7 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
-![Alt text](../../ex92.png)
+![Alt text](ntwo.png)
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1102,7 +1103,7 @@ obcdfghj
 bcdfghj
 ubcdfghj
 ```
-![Alt text](../../ex93.png)
+![Alt text](nthree.png)
 awk -f nc.awk data.dat
 ## OUTPUT 
  
@@ -1132,7 +1133,7 @@ else
 fi
 ```
 ## OUTPUT 
-![Alt text](../../ex94.png)
+![Alt text](nfour.png)
 
 # RESULT:
 The Commands are executed successfully.
